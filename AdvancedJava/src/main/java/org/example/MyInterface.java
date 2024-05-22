@@ -2,7 +2,7 @@ package org.example;
 
 @FunctionalInterface
 public interface MyInterface {
-    public void myFunction();
+    public String myFunction();
 
     default void happy(){
 
