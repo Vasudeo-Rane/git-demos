@@ -1,8 +1,8 @@
 package org.example;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class StudentDemo {
 
@@ -37,6 +37,11 @@ public class StudentDemo {
 //read concurrent HashMap and Hash Tables
     /*   Map<Integer,Student> m3  = new HashMap<>();
      m3.put(Integer.valueOf(s1.getId(),s1);*/
+        List<Student> studentList = Stream.of(s1,s2,s3,s4,s5).collect(Collectors.toList());
+         List<Student> studentFilterByPhoneNo = studentList.stream().filter(student -> student.getPhoneNumber().equals("7654")).collect(Collectors.toList());
+        System.out.println("Filter Student " + studentFilterByPhoneNo);
 
+        System.out.println(studentList.stream().sorted(Comparator.comparing(Student::getName)).collect(Collectors.toList()));
+        studentList.stream().sorted(Comparator.comparing(Student::getName,Comparator.reverseOrder())).collect(Collectors.toList());
     }
 }
