@@ -1,0 +1,29 @@
+2024-06-21 19:56:44.880035-04:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "Insert into Student values (1,'asadas','zererer', '135934905')\000d\000a[*]Insert into Student values (2,'bsaddas','yererer', '235934905')\000d\000aInsert into Student values (3,'csadas','xererer', '335934905')\000d\000aInsert into Student values (4,'dsadas','wererer', '435934905')\000d\000aInsert into Student values (5,'esadas','vererer', '535934905')\000d\000aInsert into Student values (6,'fsadas','uererer', '635934905')\000d\000aInsert into Student values (7,'gsadas','tererer', '735934905')\000d\000aInsert into Student values  (8,'hsadas','sererer', '835934905')\000d\000aInsert into Student values (9,'isadas','eererer', '035934905')\000d\000aInsert into Student values (10,'gsadas','wreererer', '835934905')"; SQL statement:
+Insert into Student values (1,'asadas','zererer', '135934905')
+Insert into Student values (2,'bsaddas','yererer', '235934905')
+Insert into Student values (3,'csadas','xererer', '335934905')
+Insert into Student values (4,'dsadas','wererer', '435934905')
+Insert into Student values (5,'esadas','vererer', '535934905')
+Insert into Student values (6,'fsadas','uererer', '635934905')
+Insert into Student values (7,'gsadas','tererer', '735934905')
+Insert into Student values  (8,'hsadas','sererer', '835934905')
+Insert into Student values (9,'isadas','eererer', '035934905')
+Insert into Student values (10,'gsadas','wreererer', '835934905') [42000-224]
+2024-06-21 19:57:10.791660-04:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "Insert into Student values (12,'bsaddas','yererer', '235934905')\000d\000a[*]Insert into Student values (13,'csadas','xererer', '335934905')\000d\000aInsert into Student values (14,'dsadas','wererer', '435934905')\000d\000aInsert into Student values (5,'esadas','vererer', '535934905')\000d\000aInsert into Student values (6,'fsadas','uererer', '635934905')\000d\000aInsert into Student values (7,'gsadas','tererer', '735934905')\000d\000aInsert into Student values  (8,'hsadas','sererer', '835934905')\000d\000aInsert into Student values (9,'isadas','eererer', '035934905')\000d\000aInsert into Student values (10,'gsadas','wreererer', '835934905')"; SQL statement:
+Insert into Student values (12,'bsaddas','yererer', '235934905')
+Insert into Student values (13,'csadas','xererer', '335934905')
+Insert into Student values (14,'dsadas','wererer', '435934905')
+Insert into Student values (5,'esadas','vererer', '535934905')
+Insert into Student values (6,'fsadas','uererer', '635934905')
+Insert into Student values (7,'gsadas','tererer', '735934905')
+Insert into Student values  (8,'hsadas','sererer', '835934905')
+Insert into Student values (9,'isadas','eererer', '035934905')
+Insert into Student values (10,'gsadas','wreererer', '835934905') [42000-224]
+2024-06-21 21:42:42.049334-04:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "Insert into employee([*]1,100.10, 'Vasu')"; expected "identifier"; SQL statement:
+Insert into employee(1,100.10, 'Vasu') [42001-224]
+2024-06-21 22:40:56.056798-04:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]STUDENT_ID STUDENT"; expected "SAVEPOINT, SCRIPT, SHUTDOWN"; SQL statement:
+STUDENT_ID STUDENT [42001-224]

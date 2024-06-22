@@ -1,0 +1,26 @@
+spring:
+  application:
+   name : Spring_API_Vasudeo
+
+  datasource:
+    url : jdbc:h2:./appdb    # jdbc:h2:./appdb  in case we use file system for database instead of in memory(jdbc:h2:mem:appdb)
+    username: sa
+    password:
+
+  h2:
+    console:
+      enabled: true
+
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
+
+server:
+    port : 8082
+
